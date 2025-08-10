@@ -20,9 +20,45 @@
 <main class="container">
   <p class="intro"><strong>Hello! Welcome to my website.</strong></p>
 
-  <section class="hero">
-    <p>(Feature image)</p>
-    <img src="assets/testasset1.png" alt="NWN2 screenshot from the module The Wizard’s Apprentice">
+  <section class="post-list">
+    <!-- Text-only post -->
+    <article class="post">
+      <header>
+        <h2>Forest Notes</h2>
+        <time datetime="2025-08-10">Aug 10, 2025</time>
+      </header>
+      <p>Spent the afternoon looking for chanterelles. Found none. Met three happy slugs.</p>
+    </article>
+
+    <!-- Image + text post -->
+    <article class="post">
+      <header>
+        <h2>Rescued a Bear (in NWN2)</h2>
+        <time datetime="2025-08-09">Aug 9, 2025</time>
+      </header>
+      <figure>
+        <img src="assets/testasset1.png"
+             data-full="assets/testasset1.png"
+             alt="NWN2 screenshot"
+             data-lightbox>
+      </figure>
+      <p>The bear looked grateful. I’ll take the 100 XP anyway.</p>
+    </article>
+
+    <!-- Another image post (external image example) -->
+    <article class="post">
+      <header>
+        <h2>Amanita in the Wild</h2>
+        <time datetime="2025-08-08">Aug 8, 2025</time>
+      </header>
+      <figure>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/99/Amanita_muscaria_3_vliegenzwammen_op_rij.jpg"
+          data-lightbox
+          alt="Amanita muscaria">
+      </figure>
+      <p>Iconic, but not for dinner.</p>
+    </article>
   </section>
 </main>
 
@@ -31,4 +67,5 @@
 </footer>
 
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="script.js" defer></script>
 </html>

@@ -45,24 +45,95 @@
     border-radius:10px;
   }
   a{color:var(--accent)}
-  footer{margin-top:1.5rem; opacity:.8; font-size:.9rem}
+  footer{margin-top:1.5rem; opacity:.8; font-size:.9rem;
+
+ h2 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.gallery figure {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.gallery figcaption {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.3rem;
+}
+  
 </style>
 
 <main>
-  <!-- Title placeholder (edit me) -->
+ <!-- Title -->
   <h1>Mush Rumors</h1>
-
-  <!-- Greeting -->
   <p><strong>Hello! Welcome to my lame website.</strong></p>
 
-  <!-- Image placeholder -->
-  <section class="hero">
-    <p><img src="assets/testasset1.png" alt="NWN2 screenshot from the module -The Wizards Apprentice-"></p>
-    <!-- Option A: local image you upload to the repo -->
-    <!-- <img src="assets/hero.jpg" alt="A short description of the image"> -->
+  <!-- About Me -->
+  <section>
+    <h2>About Me</h2>
+    <p> SAMPLE-TEXT I’m a fungi enthusiast who loves exploring the hidden world beneath our feet.
+       Whether it’s the forest floor or a petri dish, I’m always looking for connections
+       in the mycelial web. /SAMPLE-TEXT</p>
+  </section>
 
-    <!-- Option B: hotlink an external image (must be HTTPS) -->
-    <!-- <img src="https://example.com/path/to/image.jpg" alt="A short description"> -->
+  <!-- Gallery -->
+  <section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <figure>
+        <img src="assets/testasset1.png" alt="Placeholder image">
+        <figcaption>First mushroom screenshot</figcaption>
+      </figure>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Amanita_muscaria_3_vliegenzwammen_op_rij.jpg" alt="Amanita muscaria">
+        <figcaption>Spotted in the wild</figcaption>
+      </figure>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Shaggy_ink_cap_coprinus_comatus.jpg" alt="Shaggy Ink Cap">
+        <figcaption>Shaggy Ink Cap</figcaption>
+      </figure>
+       <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Amanita_muscaria_3_vliegenzwammen_op_rij.jpg" alt="Amanita muscaria">
+        <figcaption>Spotted in the wild</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/testasset1.png" alt="NWN2 screenshot from the module -The Wizards Apprentice-">
+        <figcaption>"NWN2 screenshot from from when i rescued a bear in the module "The Wizards Apprentice"</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: <a href="mailto:ninathrsn@gmail.com">ninathrsn@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/ninkath">ninkath</a></li>
+    </ul>
   </section>
 
   <footer>© <span id="y"></span> Nina Thorstensen</footer>
